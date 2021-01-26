@@ -4,3 +4,9 @@ C:\codeClinic_c_sharp\WeatherData\obj\Debug\WeatherData.csprojAssemblyReference.
 C:\codeClinic_c_sharp\WeatherData\obj\Debug\WeatherData.csproj.CoreCompileInputs.cache
 C:\codeClinic_c_sharp\WeatherData\obj\Debug\WeatherData.dll
 C:\codeClinic_c_sharp\WeatherData\obj\Debug\WeatherData.pdb
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\bin\Debug\WeatherData.dll
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\bin\Debug\WeatherData.pdb
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\obj\Debug\WeatherData.csprojAssemblyReference.cache
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\obj\Debug\WeatherData.csproj.CoreCompileInputs.cache
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\obj\Debug\WeatherData.dll
+C:\codeClinic_c_sharp\WeatherProblem\WeatherData\obj\Debug\WeatherData.pdb
