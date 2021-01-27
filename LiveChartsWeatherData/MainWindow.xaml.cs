@@ -10,19 +10,33 @@ namespace LiveChartsWeatherData
 {
     public partial class MainWindow : Window
     {
-        private static string filename = @"c:\users\booth01-mgr2\Desktop\CodeClinic\1 - Pond Oreille\Environmental_Data_Deep_Moor_2012.txt";
+        private static string filename = @"C:\codeClinic_c_sharp\WeatherProblem\pond_data\Environmental_Data_Deep_Moor_2012.txt";
 
         public MainWindow()
         {
             InitializeComponent();
 
             // Add LineSeries
+            var series = new LineSeries()
+            {
+                Title = "Barometric Pressure"
+            };
 
             // ChartValues of WeatherObservation
+            var values = new ChartValues<WeatherObservation>();
+            LoadData(values);
+            series.Values = values;
 
             // Mapping Functions from raw values to doubles for Axis (X & Y)
+            var woXY = Mappers.Xy<WeatherObservation>();
+            woXY.X((wo) => wo.TimeStamp.Ticks);
+            woXY.Y((wo) => wo.Barometric_Pressure);
 
             // Series Collection containing the LineSeries
+            MySeriesCollection = new SeriesCollection(woXY)
+            {
+                series
+            };
 
             DataContext = this; // for databinding
         }
