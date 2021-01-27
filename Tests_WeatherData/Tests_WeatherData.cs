@@ -122,7 +122,10 @@ namespace Tests_WeatherData
 
                 Check.That(arrX.ToArray().Length).IsStrictlyGreaterThan(0);
 
-                // MathNet.Numerics.Fit.Line(...);
+                var wo_Line = MathNet.Numerics.Fit.Line(arrX.ToArray(), arrY.ToArray());
+                var slope = wo_Line.Item2;
+                Check.That(slope).IsNotEqualTo(0);
+                Check.That(slope).IsStrictlyLessThan(0);
             }
         }
     }
