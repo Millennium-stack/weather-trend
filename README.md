@@ -1,5 +1,5 @@
 # weather-trend
-A problem set from the code clinic series on depicting a trend on the weather data collection.
+A problem set on depicting or analysing a trend on the weather data collection.
 
 This task involves calculating statistics from a data-set. We shall start with the weather data captured from lake Pond Oreille in Northern Idaho, US.
 
